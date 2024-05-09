@@ -10,6 +10,7 @@ planetary customs agents on the prowl. be advised.
 acknowledged control tower one.
 planetside security force is activated. Something dicey going on down there.
 two two five, please keep your distance from the warp gate.
+Warp gate power level at 47 percent.
 warp gate tickets are available from the transit authority, planet side or on station terminal.
 orbital path zero zero five is clear an available for craft insertion.
 two two five, you may begin orbital insertion at zero zero five at 300 kilometers altitude.
@@ -21,12 +22,22 @@ Cargo ship 8 1 2, preparing for atmospheric entry. Heading 3 1 0 mark 4 4 5 to s
 Cargo ship 8 1 2, exiting the night side.
 This is Cargo ship 8 1 2, requesting tractor beam assisted docking. Approaching from heading 2 1 8 mark 7 4.
 Computer's locked. Getting a signal.
-Attention: Atmospheric storms observed. Entry is not advised. Repeat, avoid atmospheric entry.
+Attention: Atmospheric storms observed. Entry is not advised. Repeat, avoid atmospheric entry until storms clear.
 Watch those satellite trajectories, one eight one four.
 Refuel request denied. You will have to contract a tug to bring you to the station.
 Passenger craft 1 8 1 4 requesting docking bay. Over.
 Requesting orbital position reservation... for... about four days.
-8 1 2, please transmit your full manifest.
+attention 8 1 2, please transmit your full manifest.
 Received, Control Tower. A S A P.
 Reverse course 1 8 1 4 ! that is a restricted zone!
 Star Tours flight 7 4: Endor Express approaching spaceport.
+Star Tours 74: you are clear.
+Passenger flight 5 3 3 prepared for departure.
+Control, I am seeing lots of interference on the scope, please advise.
+This is Control, all spacecraft be advised: solar flare is expected to reach transit space in Tee minus thirty.
+Space tug en route. Stand by, 3 6 4.
+Customs and quarrantine crew requested at landing pad 9. Acknowledge.
+2 3 3 it looks like you have some gas venting from starboard side. aftward. 2 3 3 do you copy?
+nav buoy alpha seven is under repair, watch your proximity.
+8 1 4 maintain orbit and await further instructions.
+Geo synchronous position available. Call in on channel 5 for reservation.
