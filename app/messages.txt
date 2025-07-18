@@ -36,7 +36,7 @@ Customs and quarrantine crew requested at landing pad 9. Acknowledge.
 2 3 3 it looks like you have some gas venting from starboard side, aft. ... 2 3 3 do you copy?
 nav buoy alpha seven is under repair, watch your proximity.
 I'm getting some weird readings here. Control? Are you seeing these fluctuations too?
-Anomalyous readings confirmed. ... Definitely something strange going on.
+Anomalous readings confirmed. ... Definitely something strange going on.
 Control, I am seeing lots of interference on the scope, navigation difficult. Please advise.
 A little space debris detected on approach vectors. Let's get a clean up drone out there.
 departure in tea minus 30.
@@ -47,10 +47,18 @@ Inspection crews dispatched for freight lanes one, three, and five.
 Be advised, atmospheric entry without ground control clearance is prohibited!
 Warp gate diameter will permit class seven spacecraft or less. Do not approach warp gate if your craft exceeds class seven!
 Freighter one nine one two, reduce speed and take a higher orbit.
+Watch your scanner power levels. You are too close to the station for full power. It messes with comms and sensors on the station.
 Comms channels nine and ten reserved for security and emergency personnel, keep clear of these channels.
-Good piloting, three three five. That was a close one.
+Good piloting, 3 3 5. That was a close one.
 Listen up Captains and Helmsmen: this station only permits Magnetic docking clamps. Tugs available for a fee if you do not have magnetic clamps.
 Docker clearance requested, station control. Magnetic clamps at the ready.
 This is five four niner. Minor medical emergency aboard. Subject is methane breather. Request expedited dock and specialist medical crew.
 Orbital Patrol Officer Vallard here. Suspect detected in the area. Be advised all spacecraft.
-engines check, life support check, hyper drive check, clearance check. so long, everybody. three one three one departing. over and out.
+Engines check. life support check. hyper drive check. Control systems check. clearance check... so long, everybody... this is 3 2 1 5 5,departing. over and out.
+clamps disengaged. thrusters a little sluggish. moving clear, but slowly.
+I need a bigger docking port, control, i'm a helmsman, not an surgeon!
+Control to Wombat: that is one fine looking ship! Jealously override engaged.
+proposed approach vector: 1 3 9 mark 7 7 2, and 5 by 5. Request confirmation.
+cargo manifests must be presented in galactic standard format, according to regulation 331 section F.
+Planetary quarrantine protocols may require a delay, you are gonna need to contact planet side ministry for advice.
+hey don't look at me! you're the one with a bulging, smoking, sparking exhaust vent!
