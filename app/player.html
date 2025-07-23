@@ -15,6 +15,12 @@
 			color: #4DDCC8;
 			font-family: monospace;
 		}
+		button {
+			background-color: #8da9c0;
+			font-weight: bold;
+			font-family: monospace;
+			text-transform: uppercase;
+		}
 		#infobox {
 			border: 1px solid #242526;
 			border-radius:3px;
@@ -28,8 +34,8 @@
 			background-color: #FCC;
 			box-shadow: 0 0 8px 8px #AA222277;
 			position: absolute;
-			left: 412px;
-			top: 507px;
+			    left: 796px;
+			        top: 300px;
 		}
 
 		                        /***** Track Styles *****/
@@ -47,12 +53,12 @@
 		/***** Thumb Styles *****/
 		/***** Chrome, Safari, Opera, and Edge Chromium *****/
 		input[type="range"]::-webkit-slider-thumb {
-			   -webkit-appearance: none; /* Override default look */
-			      appearance: none;
-			         margin-top: -12px; /* Centers thumb on the track */
-				    background-color: #44aeee;
-				       height: 2rem;
-				          width: 1rem;    
+			-webkit-appearance: none; /* Override default look */
+			appearance: none;
+			margin-top: -12px; /* Centers thumb on the track */
+			background-color: #44aeee;
+			height: 2rem;
+			width: 1rem;    
 		}
 	</style>
 </head>
@@ -72,6 +78,7 @@
 
 	<button id="mute_button" onclick="if(g_muted){g_muted=false}else{g_muted=true};playRandomSound();">mute</button>
 	<input type="range" id="volume_slider" min="0" max="100" value="65"> 
+	<input type="range" id="frequency_slider" min="0" max="100" value="65"> 
 
 	<span id="transcription"></span>
 
@@ -79,7 +86,7 @@
 	// Some Globals
 	var g_muted = true;
 	var g_soundUrls = [
-	  "/rdo.ogg"
+	  "/audio/rdo.ogg"
 	];
 
 
@@ -104,7 +111,7 @@ function playRandomSound() {
   });
 
   // Generate a random delay between 1 and 5 seconds (adjustable)
-  const randomDelay = Math.floor(Math.random() * 16000) + 1000;
+  const randomDelay = Math.floor(Math.random() * 16000) + (document.getElementById('frequency_slider').value * 100);
 
   // Play the sound with a delay
   setTimeout(function() {
@@ -115,7 +122,13 @@ function playRandomSound() {
 	console.warn("Audio already playing! Only Hi-Pri can get in now...");
       } else {
 	      sound.play();
-	      filenametext = (new URL(randomUrl)).pathname.replace(/\.ogg$/,"").replace(/[/_]/g," ");
+	      console.log("randomUrl:"+randomUrl+  "   (indx:" + randomIndex+")");
+	      let tgtURL = randomUrl;
+	      if (tgtURL[0] == '/') {
+		      filenametext = (new URL(tgtURL,window.location.origin)).pathname.replace(/\.ogg$/,"").replace(/[/_]/g," ");
+	      } else {
+		      filenametext = (new URL(randomUrl)).pathname.replace(/\.ogg$/,"").replace(/[/_]/g," ");
+	      }
 	      console.log(filenametext);
 		document.querySelector("#infobox > p").innerText = " [ " + filenametext + " ] ";
       }
@@ -143,7 +156,7 @@ async function fetchAndParseHTML(url) {
 
 
 //Ok, go.
-fetchAndParseHTML("/") //Root of current site. might be better to use navigator object
+fetchAndParseHTML("/audio") //Root of current site. might be better to use navigator object
   .then(doc => {
     if (doc) {
       console.log("Successfully parsed document:", doc);
@@ -151,7 +164,8 @@ fetchAndParseHTML("/") //Root of current site. might be better to use navigator 
       // to manipulate its content or extract information.
      doc.querySelectorAll("ul > li > a[href$='.ogg']").forEach((el)=>{
 	     console.log(el.href);
-	     g_soundUrls.push(el.href);
+             let aurl = new URL(el.href);
+	     g_soundUrls.push('/audio/'+aurl.pathname);
      });
 	// Call the function to play a sound initially (now that we have available sounds identified)
 	playRandomSound();

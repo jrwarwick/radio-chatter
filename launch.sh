@@ -55,6 +55,7 @@ fi
 docker run -it --rm --name $COMMON_IMG_CON_NAME \
 	-p ${EXTERNAL_PORT}:8080 \
 	--mount type=bind,source="$(pwd)"/${AIRLOCK_DIRNAME},target=${AIRLOCK_CONTAINER_DIRPATH} \
+	--mount type=bind,source="$(pwd)/rendered_app_audio",target=/app/audio \
 	--env-file ${COMMON_IMG_CON_NAME}.test.env \
 	$COMMON_IMG_CON_NAME \
 	/bin/bash \

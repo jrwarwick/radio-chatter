@@ -3,8 +3,3 @@ en_GB-southern_english_female-low
 en_US-amy-low
 en_US-arctic-medium
 en_US-ryan-low
-en_GB-alan-low
-en_GB-southern_english_female-low
-en_US-amy-low
-en_US-arctic-medium
-en_US-ryan-low

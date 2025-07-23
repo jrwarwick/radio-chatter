@@ -38,15 +38,19 @@ This project is licensed under the MIT License - see the LICENSE file for detail
  - better krackelkrunches
 
  - add some variety to interference and distortion. Ringmod edition, shearing waves of static. 
-	some this *might* be possible client side with webaudio hackery.
+	some this *might* be possible client side with webaudio hackery. Pizzicato seems to have a decent ringmod.
 
  - occasional roger beeps.
+
+ - a few optional xwing ringmod comms. 
 
  - frequency (of transmissions) sliders. 
 
  - Volume slider needs something better than linear value application. I read a cool article on the web one time about a decent poorman's approximation of a reasonble logarithm thing.
 
  - volume slider and mute button need better styling. Bonus: place carefull *on top* of the background image giving effect that the panel is interactive.
+
+ - the "stt" readout should have a faux terminal type-out effect
 
  - visual animation of the "deck". der blinken lights.
 	red dot should match/indicate mute state.
